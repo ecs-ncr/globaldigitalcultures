@@ -290,12 +290,22 @@ export default function App() {
       </section>
 
       {/* Contact */}
-      <footer id="contact" className="bg-gray-900 text-gray-200 py-20 scroll-mt-24">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-xl font-semibold">Contact Us</h2>
-          <p className="text-sm mt-2">engconference.ncr@christuniversity.in</p>
-        </div>
-      </footer>
+<footer
+  id="contact"
+  className="bg-gray-900 text-gray-200 py-16 mt-20 scroll-mt-24"
+>
+  <div className="max-w-6xl mx-auto px-6">
+
+    <h2 className="text-xl font-semibold">Contact Us</h2>
+    <p className="text-sm mt-2">engconference.ncr@christuniversity.in</p>
+
+    {/* Divider line */}
+    <div className="border-t border-gray-700 my-6"></div>
+
+    {/* Created by */}
+    <div className="text-center text-xs text-gray-500">
+      Created with ❤️ by <span className="font-semibold">Siddharth Dubey</span>
     </div>
-  );
-}
+
+  </div>
+</footer>
