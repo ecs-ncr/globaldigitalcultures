@@ -1,25 +1,277 @@
-import logo from './logo.svg';
-import './App.css';
+import GDCLogo from "./assets/logos/gdc-logo.png";
+import paromita from "./assets/speakers/paromita.png";
+import tonisha from "./assets/speakers/tonisha.png";
+import pallavi from "./assets/speakers/pallavi.png";
+import pateman from "./assets/speakers/pateman.jpg";
 
-function App() {
+import React from "react";
+import "./index.css";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+
+      {/* Navbar */}
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <img 
+  src={GDCLogo} 
+  alt="Global Digital Cultures Logo"
+  className="w-12 h-12 object-contain"
+/>
+
+            <div>
+              <div className="text-lg font-semibold">Global Digital Cultures</div>
+              <div className="text-xs text-gray-500">23–24 February, 2026 · Hybrid · CHRIST Delhi NCR</div>
+            </div>
+          </div>
+
+          <nav className="hidden md:flex gap-6 items-center text-sm">
+            <a href="#about" className="hover:underline">About</a>
+            <a href="#themes" className="hover:underline">Sub-themes</a>
+            <a href="#speakers" className="hover:underline">Speakers</a>
+            <a href="#fees" className="hover:underline">Registration</a>
+            <a href="#important-dates" className="hover:underline">Important Dates</a>
+            <a href="#contact" className="hover:underline">Contact</a>
+          </nav>
+        </div>
       </header>
+
+      {/* Hero Section */}
+      <section id="home" className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 scroll-mt-20">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Global Digital Cultures</h1>
+            <p className="mt-4 text-lg text-indigo-100 max-w-xl">
+              Texts, Technologies, and Audiences — an international hybrid conference exploring platform capitalism,
+              digital labour, algorithmic visibility, and creative futures with a focus on South Asia and the Global South.
+            </p>
+
+            <div className="mt-6 flex gap-3">
+              <a href="#fees" className="inline-block bg-white text-indigo-700 px-5 py-3 rounded-md font-medium shadow">Register</a>
+              <a href="#important-dates" className="inline-block border border-white/30 px-5 py-3 rounded-md text-white">Important Dates</a>
+            </div>
+
+            <div className="mt-6 text-sm text-indigo-100">
+              <div>23–24 February, 2026 · Hybrid · CHRIST (Deemed to be University), Delhi NCR Campus</div>
+              <div className="mt-2">Abstract submission deadline: <strong>10 December, 2025</strong></div>
+            </div>
+          </div>
+
+          <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 p-6">
+            <div className="bg-white rounded-md p-4 text-gray-900">
+              <h3 className="text-xl font-semibold">Call for Abstracts</h3>
+              <p className="mt-2 text-sm">
+                Submit an abstract (max 300 words) with a short bio. Email as a Word file to  
+                <a href="mailto:engconference.ncr@christuniversity.in" className="text-indigo-600 underline ml-1">
+                  engconference.ncr@christuniversity.in
+                </a>
+              </p>
+
+              <ul className="mt-3 text-sm space-y-1">
+                <li>Notification of acceptance: <strong>10 January, 2026</strong></li>
+                <li>Last date to register: <strong>15 January, 2026</strong></li>
+                <li>Offline participation includes lunch, tea, and snacks.</li>
+              </ul>
+
+              <div className="mt-4 flex gap-2">
+                <a
+  href="mailto:engconference.ncr@christuniversity.in?subject=Abstract Submission – Global Digital Cultures 2026&body=Dear Committee,%0D%0A%0D%0APlease find attached my abstract for the conference.%0D%0A%0D%0AName:%0D%0AAffiliation:%0D%0ATitle of Abstract:%0D%0A%0D%0ARegards,%0D%0A"
+  className="px-3 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
+>
+  Submit Abstract
+</a>
+
+                <a href="#fees" className="px-3 py-2 border border-gray-200 rounded">Registration Fees</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About */}
+      <section id="about" className="max-w-6xl mx-auto px-6 py-20 scroll-mt-24">
+        <h2 className="text-3xl font-bold">About the Conference</h2>
+        <p className="mt-4 text-gray-700 leading-relaxed text-lg">
+          In the era of rapid technological change, digitalization, globalization, and platformization are reshaping film,
+          media, and creative industries. This conference critically explores the intersections of texts, technologies,
+          and audiences in global digital cultures, with a focus on South Asia and the Global South.
+        </p>
+
+        <p className="mt-4 text-gray-700 leading-relaxed text-lg">
+          It engages with questions of power, identity, labour, policy, and representation, centering issues of access,
+          marginality, and creativity in an age of platform capitalism and algorithmic visibility.
+        </p>
+      </section>
+
+      {/* Sub-themes */}
+      <section id="themes" className="bg-white py-20 scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold">Sub-themes</h2>
+          <p className="mt-2 text-gray-600">(but not limited to)</p>
+
+          <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              'Platform Capitalism, Algorithms, and Visibility',
+              'Digital Labour and Creative Economies',
+              'Identity, Representation, and Resistance',
+              'Aesthetics, Narratives, and Storytelling',
+              'Infrastructures and Policy',
+              'Transnational Cultures and Media',
+              'Futures of Digital Creativity',
+              'Texts (Aesthetic & Narrative Forms)',
+              'Technologies (Platforms & Algorithms)',
+              'Audiences (Users & Communities)'
+            ].map(item => (
+              <div key={item} className="p-4 border rounded-md bg-gray-50">
+                <div className="font-medium text-sm">{item}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Speakers */}
+      <section id="speakers" className="max-w-6xl mx-auto px-6 py-20 scroll-mt-24">
+        <h2 className="text-3xl font-bold">Speakers & Resource Persons</h2>
+
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-4 gap-6">
+          {[
+            {name: 'Dr. Paromita Pain', title: 'Assistant Professor, University of Nevada, Reno', img: paromita},
+            {name: 'Dr. Tonisha Guin', title: 'Assistant Professor, IIT Jodhpur', img: tonisha},
+            {name: 'Dr. Pallavi Guha', title: 'Associate Professor, Towson University', img: pallavi},
+            {name: 'Prof. Matthew Pateman', title: 'Head of Department, Edge Hill University', img: pateman},
+          ].map(s => (
+            <div key={s.name} className="p-4 bg-white rounded-lg shadow-sm">
+              <img 
+                src={s.img} 
+                alt={s.name}
+                className="h-36 w-full object-cover rounded-md"
+              />
+              <div className="mt-3">
+                <div className="font-semibold">{s.name}</div>
+                <div className="text-sm text-gray-600 mt-1">{s.title}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+    {/* Registration & Fees */}
+<section id="fees" className="bg-gradient-to-b from-indigo-50 to-purple-50 py-20 scroll-mt-24">
+  <div className="max-w-7xl mx-auto px-6">
+
+    {/* Heading */}
+    <h2 className="text-4xl font-extrabold text-gray-900 text-center">
+      Registration & Fees
+    </h2>
+    <p className="text-center text-gray-600 mt-3 text-lg">
+      Online & Offline Fee Structure for the Global Digital Cultures Conference 2026
+    </p>
+
+    {/* GENERAL TABLE */}
+    <div className="mt-12 bg-white rounded-2xl shadow-xl border border-gray-200 p-6 md:p-10">
+      <h3 className="text-2xl font-bold text-indigo-700 mb-6 text-center">
+        General Participants
+      </h3>
+
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse text-center">
+          <thead>
+            <tr className="bg-indigo-100 text-indigo-900 text-lg font-semibold">
+              <th className="border p-3">Category</th>
+              <th className="border p-3">Online</th>
+              <th className="border p-3">Offline</th>
+            </tr>
+          </thead>
+          <tbody className="text-gray-700 text-md">
+            {[
+              ["Faculty", "2500", "3500"],
+              ["Scholars", "1500", "2000"],
+              ["PG Students", "1000", "1500"],
+              ["Independent Scholar", "1500", "2000"],
+              ["UG Students", "1000", "1000"],
+              ["Participation", "500", "1000"],
+              ["International", "$40", "$80"],
+            ].map((row) => (
+              <tr key={row[0]} className="hover:bg-indigo-50 transition">
+                <td className="border p-3 font-medium">{row[0]}</td>
+                <td className="border p-3">{row[1]}</td>
+                <td className="border p-3">{row[2]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p className="text-xs text-center mt-2 text-gray-500">
+        *Offline participation includes lunch, tea, and snacks.
+      </p>
+    </div>
+
+    {/* CHRISTITES TABLE */}
+    <div className="mt-16 bg-white rounded-2xl shadow-xl border border-gray-200 p-6 md:p-10">
+      <h3 className="text-2xl font-bold text-purple-700 mb-6 text-center">
+        For CHRISTITES
+      </h3>
+
+      <div className="overflow-x-auto">
+        <table className="w-full border-collapse text-center">
+          <thead>
+            <tr className="bg-purple-100 text-purple-900 text-lg font-semibold">
+              <th className="border p-3">Category</th>
+              <th className="border p-3">Fees</th>
+            </tr>
+          </thead>
+          <tbody className="text-gray-700 text-md">
+            {[
+              ["UG / PG Students", "₹ 1000"],
+              ["PhD Scholars / Independent Researchers", "₹ 1500"],
+              ["Faculty Members / Postdoc / Professionals", "₹ 2500"],
+            ].map((row) => (
+              <tr key={row[0]} className="hover:bg-purple-50 transition">
+                <td className="border p-3 font-medium">{row[0]}</td>
+                <td className="border p-3 font-semibold text-purple-700">{row[1]}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+      {/* Important Dates */}
+      <section id="important-dates" className="max-w-6xl mx-auto px-6 py-20 scroll-mt-24">
+        <h2 className="text-3xl font-bold">Important Dates</h2>
+
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="p-4 bg-white rounded shadow">
+            <div className="font-semibold">Abstract Submission</div>
+            <div className="text-sm text-gray-700 mt-1">10 December, 2025</div>
+          </div>
+          <div className="p-4 bg-white rounded shadow">
+            <div className="font-semibold">Notification of Acceptance</div>
+            <div className="text-sm text-gray-700 mt-1">10 January, 2026</div>
+          </div>
+          <div className="p-4 bg-white rounded shadow">
+            <div className="font-semibold">Last Date to Register</div>
+            <div className="text-sm text-gray-700 mt-1">15 January, 2026</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact */}
+      <footer id="contact" className="bg-gray-900 text-gray-200 py-20 scroll-mt-24">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-xl font-semibold">Contact Us</h2>
+          <p className="text-sm mt-2">engconference.ncr@christuniversity.in</p>
+        </div>
+      </footer>
     </div>
   );
 }
-
-export default App;
