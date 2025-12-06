@@ -12,31 +12,55 @@ export default function App() {
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
 
       {/* Navbar */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <img 
-  src={GDCLogo} 
-  alt="Global Digital Cultures Logo"
-  className="w-12 h-12 object-contain"
-/>
+<header className="bg-white shadow-sm sticky top-0 z-50">
+  <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
-            <div>
-              <div className="text-lg font-semibold">Global Digital Cultures</div>
-              <div className="text-xs text-gray-500">23–24 February, 2026 · Hybrid · CHRIST Delhi NCR</div>
-            </div>
-          </div>
+    {/* LEFT SIDE — LOGOS + TITLE */}
+    <div className="flex items-center gap-6">
 
-          <nav className="hidden md:flex gap-6 items-center text-sm">
-            <a href="#about" className="hover:underline">About</a>
-            <a href="#themes" className="hover:underline">Sub-themes</a>
-            <a href="#speakers" className="hover:underline">Speakers</a>
-            <a href="#fees" className="hover:underline">Registration</a>
-            <a href="#important-dates" className="hover:underline">Important Dates</a>
-            <a href="#contact" className="hover:underline">Contact</a>
-          </nav>
+      {/* GDC Logo (inside src/assets/logos) */}
+      <img 
+        src={GDCLogo} 
+        alt="Global Digital Cultures Logo"
+        className="w-12 h-12 object-contain"
+      />
+
+      {/* University Logo (public folder) */}
+      <img 
+        src="/universitylogo.png"
+        alt="University Logo"
+        className="w-12 h-12 object-contain"
+      />
+
+      {/* ECSA Logo (public folder) */}
+      <img 
+        src="/ecsa logo.png"
+        alt="ECSA Logo"
+        className="w-12 h-12 object-contain"
+      />
+
+      {/* Title text */}
+      <div>
+        <div className="text-lg font-semibold">Global Digital Cultures</div>
+        <div className="text-xs text-gray-500">
+          23–24 February, 2026 · Hybrid · CHRIST Delhi NCR
         </div>
-      </header>
+      </div>
+    </div>
+
+    {/* RIGHT SIDE — NAV LINKS */}
+    <nav className="hidden md:flex gap-6 items-center text-sm">
+      <a href="#about" className="hover:underline">About</a>
+      <a href="#themes" className="hover:underline">Sub-themes</a>
+      <a href="#speakers" className="hover:underline">Speakers</a>
+      <a href="#fees" className="hover:underline">Registration</a>
+      <a href="#important-dates" className="hover:underline">Important Dates</a>
+      <a href="#contact" className="hover:underline">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
 
       {/* Hero Section */}
       <section id="home" className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 scroll-mt-20">
