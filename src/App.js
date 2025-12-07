@@ -114,48 +114,58 @@ export default function App() {
     </div>
   </div>
 
-  {/* RIGHT CARD */}
-  <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 p-6 glass-float">
-    <div className="bg-white rounded-md p-5 text-gray-900">
-      <h3 className="text-xl font-semibold glitch-small" data-text="Call for Abstracts">
-        Call for Abstracts
-      </h3>
+  {/* RIGHT CARD – Chic Animated Version */}
+<div className="relative group">
 
-      <p className="mt-3 text-sm leading-relaxed">
-        Submit an abstract (max 300 words) with a short bio. Email as a Word file to
-        <a
-          href="mailto:engconference.ncr@christuniversity.in"
-          className="text-indigo-600 underline ml-1 hover:text-indigo-800 transition"
-        >
-          engconference.ncr@christuniversity.in
-        </a>
-      </p>
+  {/* Glow background */}
+  <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-30 blur-xl group-hover:opacity-60 transition"></div>
 
-      <ul className="mt-4 text-sm space-y-1">
-        <li>Notification of acceptance: <strong>10 January, 2026</strong></li>
-        <li>Last date to register: <strong>15 January, 2026</strong></li>
-        <li>Offline participation includes lunch, tea, and snacks.</li>
-      </ul>
+  {/* Card */}
+  <div className="relative rounded-xl bg-white/80 backdrop-blur-lg p-6 shadow-2xl border border-white/30">
 
-      <div className="mt-5 flex gap-2">
-        <a
-          href="mailto:engconference.ncr@christuniversity.in?subject=Abstract Submission – Global Digital Cultures 2026&body=Dear Committee,%0D%0A%0D%0APlease find attached my abstract for the conference.%0D%0A%0D%0AName:%0D%0AAffiliation:%0D%0ATitle of Abstract:%0D%0A%0D%0ARegards,%0D%0A"
-          className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 hover:scale-105 transition"
-        >
-          Submit Abstract
-        </a>
+    <h3 className="text-xl font-bold tracking-wide text-gray-900 relative overflow-hidden">
+      <span className="relative z-10">Call for Abstracts</span>
+      <span className="absolute inset-0 bg-black/5 translate-x-[-100%] group-hover:translate-x-[100%] transition duration-700"></span>
+    </h3>
 
-        <a
-          href="#fees"
-          className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-100 transition"
-        >
-          Registration Fees
-        </a>
-      </div>
+    <p className="mt-3 text-sm leading-relaxed text-gray-700">
+      Submit an abstract (max 300 words) with a short bio. Email as a Word file to
+      <a
+        href="mailto:engconference.ncr@christuniversity.in"
+        className="text-indigo-600 underline ml-1 hover:text-indigo-800 transition"
+      >
+        engconference.ncr@christuniversity.in
+      </a>
+    </p>
+
+    <ul className="mt-4 text-sm space-y-1 text-gray-700">
+      <li><strong>Notification:</strong> 10 January, 2026</li>
+      <li><strong>Last Date:</strong> 15 January, 2026</li>
+      <li>Offline participation includes lunch & refreshments.</li>
+    </ul>
+
+    <div className="mt-6 flex gap-3">
+      <a
+        href="mailto:engconference.ncr@christuniversity.in"
+        className="px-5 py-2 bg-black text-white rounded-md tracking-wide hover:scale-105 transition"
+      >
+        Submit Now
+      </a>
+
+      <a
+  href="#fees"
+  className="px-5 py-2 border border-gray-900 text-gray-900 font-medium rounded-md 
+             hover:bg-gray-900 hover:text-white transition"
+>
+  View Fees
+</a>
+
     </div>
-  </div>
 
+    </div>
 </div>
+</div>
+</section>
 
 
       {/* About */}
@@ -173,8 +183,20 @@ export default function App() {
         </p>
       </section>
       {/* About the Department */}
-<section id="department" className="bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24">
-  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+<section
+  id="department"
+  className="relative bg-white py-28 overflow-hidden"
+>
+  {/* Decorative background blocks */}
+  <div className="absolute inset-0 z-0 pointer-events-none">
+    <div className="absolute top-10 left-10 w-40 h-40 bg-indigo-100 rotate-12 opacity-60"></div>
+    <div className="absolute top-1/2 left-1/3 w-56 h-56 bg-purple-100 rotate-6 opacity-60"></div>
+    <div className="absolute bottom-16 right-20 w-40 h-40 bg-pink-100 -rotate-12 opacity-60"></div>
+    <div className="absolute top-20 right-1/4 w-64 h-64 border-2 border-gray-200 rotate-3"></div>
+  </div>
+
+  {/* Actual content */}
+  <div className="relative z-10 max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
     <div>
       <h2 className="text-4xl font-bold tracking-tight text-gray-900">
@@ -198,9 +220,11 @@ export default function App() {
       </p>
     </div>
 
+    {/* Right-side highlight card */}
     <div className="relative">
-      <div className="absolute -top-6 -left-6 w-full h-full border border-black"></div>
-      <div className="bg-white p-10 shadow-xl">
+      <div className="absolute -top-6 -left-6 w-full h-full border-2 border-black rounded-sm"></div>
+
+      <div className="bg-white p-10 shadow-2xl relative">
         <h3 className="text-2xl font-semibold mb-4">
           Interdisciplinary · Critical · Global
         </h3>
@@ -213,6 +237,7 @@ export default function App() {
 
   </div>
 </section>
+
 
 
 {/* About CHRIST University */}

@@ -66,24 +66,81 @@
   color: #6366f1;
 }
 
-/* Floating card */
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(15px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.2s ease-out forwards;
+}
+
+/* Floating glass card */
 .glass-float {
-  animation: floatCard 6s ease-in-out infinite;
+  animation: floatCard 4s ease-in-out infinite;
+  backdrop-filter: blur(12px);
 }
 
-@keyframes floatCard {
-  0%   { transform: translateY(0px); }
-  50%  { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+/* Glitch effect - large text */
+.glitch {
+  position: relative;
 }
 
-@keyframes glitchTop {
-  0% { clip-path: inset(0 0 70% 0); }
-  100% { clip-path: inset(0 0 20% 0); }
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  overflow: hidden;
 }
 
-@keyframes glitchBottom {
-  0% { clip-path: inset(80% 0 0 0); }
-  100% { clip-path: inset(20% 0 0 0); }
+.glitch::before {
+  top: -2px;
+  text-shadow: -2px 0 #ff00c8;
+  animation: glitchTop 1s infinite linear alternate-reverse;
 }
 
+.glitch::after {
+  top: 2px;
+  text-shadow: 2px 0 #00fff9;
+  animation: glitchBottom 1.2s infinite linear alternate-reverse;
+}
+
+/* Glitch effect - small text */
+.glitch-small {
+  position: relative;
+}
+
+.glitch-small::before,
+.glitch-small::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: white;
+  overflow: hidden;
+}
+
+.glitch-small::before {
+  top: -1px;
+  text-shadow: -1px 0 #ff00c8;
+  animation: glitchTop 1.4s infinite linear alternate-reverse;
+}
+
+.glitch-small::after {
+  top: 1px;
+  text-shadow: 1px 0 #00fff9;
+  animation: glitchBottom 1.6s infinite linear alternate-reverse;
+}
+@keyframes slowFloat {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+section#department > div:first-child div {
+  animation: slowFloat 10s ease-in-out infinite;
+}
