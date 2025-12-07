@@ -128,6 +128,27 @@ export default function App() {
           marginality, and creativity in an age of platform capitalism and algorithmic visibility.
         </p>
       </section>
+      {/* University & Department Info */}
+<section id="about-institution" className="bg-white py-16 scroll-mt-24">
+  <div className="max-w-6xl mx-auto px-6 space-y-10">
+    {/* Department */}
+    <div>
+      <h2 className="text-3xl font-bold">Department – English & Cultural Studies, CHRIST (Deemed to be University)</h2>
+      <p className="mt-4 text-gray-700 leading-relaxed">
+        The Department of English and Cultural Studies nurtures critical and creative intellect through artistic expression, cultural inquiry, and socially engaged scholarship. Students are encouraged to read self, society, and culture in relation to literature, media, and heritage. With undergraduate, postgraduate, and doctoral programmes, the department fosters holistic development — emotional, academic, professional, and global — preparing students to become socially conscious thinkers and creators.
+      </p>
+    </div>
+
+    {/* University */}
+    <div>
+      <h2 className="text-3xl font-bold">About CHRIST (Deemed to be University)</h2>
+      <p className="mt-4 text-gray-700 leading-relaxed">
+        Established in 1969 as “Christ College,” the institution achieved “Deemed to be University” status in 2008 under the aegis of the Carmelites of Mary Immaculate (CMI). CHRIST has evolved into a multidisciplinary university offering undergraduate, postgraduate, and doctoral courses across humanities, sciences, management, engineering, law and more. Accredited with A+ grade by NAAC and ranked among India’s top 100 universities (NIRF 2024: #60), CHRIST offers education to over 30,000 students across multiple campuses — including Ghaziabad (Delhi NCR).
+      </p>
+    </div>
+  </div>
+</section>
+
 
       {/* Sub-themes */}
       <section id="themes" className="bg-white py-20 scroll-mt-24">
