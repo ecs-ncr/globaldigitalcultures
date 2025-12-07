@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes doubleBlink {
+  0% { opacity: 1; }
+  20% { opacity: 0.3; }
+  40% { opacity: 1; }
+  60% { opacity: 0.3; }
+  80% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.blink-hover:hover {
+  animation: doubleBlink 0.6s ease-in-out;
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.4);
+  transform: scale(1.02);
+  transition: all 0.3s ease;
+}
+
