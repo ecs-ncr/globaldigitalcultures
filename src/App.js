@@ -245,7 +245,11 @@ export default function App() {
               'Technologies (Platforms & Algorithms)',
               'Audiences (Users & Communities)'
             ].map(item => (
-              <div key={item} className="p-4 border rounded-md bg-gray-50">
+              <div
+  key={item}
+  className="p-4 border rounded-md bg-gray-50 blink-hover cursor-pointer"
+>
+
                 <div className="font-medium text-sm">{item}</div>
               </div>
             ))}
