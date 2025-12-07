@@ -64,8 +64,23 @@ export default function App() {
 
 
       {/* Hero Section */}
-      <section id="home" className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20 scroll-mt-20">
-        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <section id="home" className="relative text-white py-20 scroll-mt-20 overflow-hidden">
+  {/* Background video */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="absolute top-0 left-0 w-full h-full object-cover z-0"
+  >
+    <source src="/bg-video.mp4" type="video/mp4" />
+  </video>
+
+  {/* Dark overlay for readability */}
+  <div className="absolute inset-0 bg-black/60 z-10"></div>
+
+
+        <div className="relative z-20 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div>
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Global Digital Cultures</h1>
             <p className="mt-4 text-lg text-indigo-100 max-w-xl">
