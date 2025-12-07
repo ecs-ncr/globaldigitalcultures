@@ -128,26 +128,86 @@ export default function App() {
           marginality, and creativity in an age of platform capitalism and algorithmic visibility.
         </p>
       </section>
-      {/* University & Department Info */}
-<section id="about-institution" className="bg-white py-16 scroll-mt-24">
-  <div className="max-w-6xl mx-auto px-6 space-y-10">
-    {/* Department */}
+      {/* About the Department */}
+<section id="department" className="bg-gradient-to-br from-gray-50 via-white to-gray-100 py-24">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
     <div>
-      <h2 className="text-3xl font-bold">Department – English & Cultural Studies, CHRIST (Deemed to be University)</h2>
-      <p className="mt-4 text-gray-700 leading-relaxed">
-        The Department of English and Cultural Studies nurtures critical and creative intellect through artistic expression, cultural inquiry, and socially engaged scholarship. Students are encouraged to read self, society, and culture in relation to literature, media, and heritage. With undergraduate, postgraduate, and doctoral programmes, the department fosters holistic development — emotional, academic, professional, and global — preparing students to become socially conscious thinkers and creators.
+      <h2 className="text-4xl font-bold tracking-tight text-gray-900">
+        Department of English & Cultural Studies
+      </h2>
+
+      <div className="h-1 w-20 bg-black mt-4 mb-8"></div>
+
+      <p className="text-gray-700 text-lg leading-relaxed">
+        The Department of English and Cultural Studies at CHRIST (Deemed to be University), 
+        Delhi NCR Campus, is an interdisciplinary space dedicated to literature, cultural 
+        theory, media studies, and critical humanities. The department fosters critical 
+        thinking, global perspectives, and innovative research practices that interrogate 
+        culture, identity, power, and digital transformations.
+      </p>
+
+      <p className="text-gray-700 text-lg leading-relaxed mt-6">
+        With a strong emphasis on research, creative practice, and community engagement, 
+        the department nurtures scholars who engage meaningfully with contemporary cultural 
+        and literary debates.
       </p>
     </div>
 
-    {/* University */}
-    <div>
-      <h2 className="text-3xl font-bold">About CHRIST (Deemed to be University)</h2>
-      <p className="mt-4 text-gray-700 leading-relaxed">
-        Established in 1969 as “Christ College,” the institution achieved “Deemed to be University” status in 2008 under the aegis of the Carmelites of Mary Immaculate (CMI). CHRIST has evolved into a multidisciplinary university offering undergraduate, postgraduate, and doctoral courses across humanities, sciences, management, engineering, law and more. Accredited with A+ grade by NAAC and ranked among India’s top 100 universities (NIRF 2024: #60), CHRIST offers education to over 30,000 students across multiple campuses — including Ghaziabad (Delhi NCR).
-      </p>
+    <div className="relative">
+      <div className="absolute -top-6 -left-6 w-full h-full border border-black"></div>
+      <div className="bg-white p-10 shadow-xl">
+        <h3 className="text-2xl font-semibold mb-4">
+          Interdisciplinary · Critical · Global
+        </h3>
+        <p className="text-gray-600 leading-relaxed">
+          A space where literature meets digital cultures, performance, and media, 
+          shaping critical thinkers for a rapidly transforming world.
+        </p>
+      </div>
     </div>
+
   </div>
 </section>
+
+
+{/* About CHRIST University */}
+<section id="university" className="bg-black py-24 text-white">
+  <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+
+    <div className="order-2 md:order-1">
+      <h2 className="text-4xl font-bold tracking-tight">
+        CHRIST (Deemed to be University)
+      </h2>
+
+      <div className="h-1 w-20 bg-white mt-4 mb-8"></div>
+
+      <p className="text-gray-300 text-lg leading-relaxed">
+        Established with a vision of excellence in education, CHRIST (Deemed to be University) 
+        has evolved into a globally recognised institution known for academic rigor, 
+        ethical grounding, and holistic student development.
+      </p>
+
+      <p className="text-gray-300 text-lg leading-relaxed mt-6">
+        The Delhi NCR Campus stands as a dynamic center of interdisciplinary learning, 
+        innovation, and global academic engagement.
+      </p>
+    </div>
+
+    <div className="order-1 md:order-2">
+      <div className="bg-white/10 backdrop-blur-md border border-white/20 p-12 rounded-lg">
+        <h3 className="text-2xl font-semibold mb-4">
+          Excellence · Vision · Global Impact
+        </h3>
+        <p className="text-gray-300 leading-relaxed">
+          A legacy of academic distinction shaping future-ready global citizens.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
       {/* Sub-themes */}
