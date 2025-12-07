@@ -55,6 +55,7 @@ export default function App() {
       <a href="#speakers" className="hover:underline">Speakers</a>
       <a href="#fees" className="hover:underline">Registration</a>
       <a href="#important-dates" className="hover:underline">Important Dates</a>
+      <a href="#conveners" className="hover:underline">Conveners</a>
       <a href="#contact" className="hover:underline">Contact</a>
     </nav>
 
@@ -369,6 +370,65 @@ export default function App() {
           </div>
         </div>
       </section>
+
+{/* Conference Conveners */}
+<section 
+  id="conveners" 
+  className="bg-gradient-to-br from-white via-gray-50 to-gray-100 py-24 scroll-mt-24"
+>
+  <div className="max-w-6xl mx-auto px-6">
+
+    <h2 className="text-4xl font-bold text-center text-gray-900">
+      Conference Conveners
+    </h2>
+    <p className="text-center text-gray-600 mt-3 text-lg">
+      For queries, feel free to reach out directly
+    </p>
+
+    <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      {/* Dr. Tanupriya */}
+      <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+        <h3 className="text-xl font-semibold text-gray-900">
+          Dr. Tanupriya
+        </h3>
+        <a 
+          href="mailto:tanupriya@christuniversity.in"
+          className="mt-4 inline-block text-indigo-600 hover:underline break-all"
+        >
+          tanupriya@christuniversity.in
+        </a>
+      </div>
+
+      {/* Dr. Anu M Varghese */}
+      <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+        <h3 className="text-xl font-semibold text-gray-900">
+          Dr. Anu M Varghese
+        </h3>
+        <a 
+          href="mailto:anu.varghese@christuniversity.in"
+          className="mt-4 inline-block text-indigo-600 hover:underline break-all"
+        >
+          anu.varghese@christuniversity.in
+        </a>
+      </div>
+
+      {/* Mr. Siddharth Dubey */}
+      <div className="bg-white rounded-2xl shadow-lg p-8 text-center hover:shadow-2xl transition">
+        <h3 className="text-xl font-semibold text-gray-900">
+          Mr. Siddharth Dubey
+        </h3>
+        <a 
+          href="mailto:dubey.siddharth@christuniversity.in"
+          className="mt-4 inline-block text-indigo-600 hover:underline break-all"
+        >
+          dubey.siddharth@christuniversity.in
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
             {/* Contact */}
       <footer
