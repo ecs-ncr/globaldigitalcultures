@@ -16,4 +16,74 @@
   transform: scale(1.02);
   transition: all 0.3s ease;
 }
+/* Fade in animation */
+.animate-fade-in {
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Glitch effect - big heading */
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+.glitch::before {
+  top: -2px;
+  color: #8b5cf6;
+  animation: glitchTop 1.5s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  top: 2px;
+  color: #22d3ee;
+  animation: glitchBottom 1.2s infinite linear alternate-reverse;
+}
+
+/* Smaller glitch */
+.glitch-small::before,
+.glitch-small::after {
+  font-size: inherit;
+  color: #6366f1;
+}
+
+/* Floating card */
+.glass-float {
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes glitchTop {
+  0% { clip-path: inset(0 0 70% 0); }
+  100% { clip-path: inset(0 0 20% 0); }
+}
+
+@keyframes glitchBottom {
+  0% { clip-path: inset(80% 0 0 0); }
+  100% { clip-path: inset(20% 0 0 0); }
+}
 

@@ -77,58 +77,86 @@ export default function App() {
   </video>
 
   {/* Dark overlay for readability */}
-  <div className="absolute inset-0 bg-black/60 z-10"></div>
+<div className="absolute inset-0 bg-black/60 z-10"></div>
 
+<div className="relative z-20 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
-        <div className="relative z-20 max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Global Digital Cultures</h1>
-            <p className="mt-4 text-lg text-indigo-100 max-w-xl">
-              Texts, Technologies, and Audiences — an international hybrid conference exploring platform capitalism,
-              digital labour, algorithmic visibility, and creative futures with a focus on South Asia and the Global South.
-            </p>
+  {/* LEFT TEXT */}
+  <div className="animate-fade-in">
+    <h1 className="glitch text-4xl md:text-5xl font-extrabold leading-tight" data-text="Global Digital Cultures">
+      Global Digital Cultures
+    </h1>
 
-            <div className="mt-6 flex gap-3">
-              <a href="#fees" className="inline-block bg-white text-indigo-700 px-5 py-3 rounded-md font-medium shadow">Register</a>
-              <a href="#important-dates" className="inline-block border border-white/30 px-5 py-3 rounded-md text-white">Important Dates</a>
-            </div>
+    <p className="mt-4 text-lg text-indigo-100 max-w-xl">
+      Texts, Technologies, and Audiences — an international hybrid conference exploring platform capitalism,
+      digital labour, algorithmic visibility, and creative futures with a focus on South Asia and the Global South.
+    </p>
 
-            <div className="mt-6 text-sm text-indigo-100">
-              <div>23–24 February, 2026 · Hybrid · CHRIST (Deemed to be University), Delhi NCR Campus</div>
-              <div className="mt-2">Abstract submission deadline: <strong>10 December, 2025</strong></div>
-            </div>
-          </div>
+    <div className="mt-6 flex gap-3">
+      <a
+        href="#fees"
+        className="inline-block bg-white text-indigo-700 px-5 py-3 rounded-md font-medium shadow hover:scale-105 transition"
+      >
+        Register
+      </a>
 
-          <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 p-6">
-            <div className="bg-white rounded-md p-4 text-gray-900">
-              <h3 className="text-xl font-semibold">Call for Abstracts</h3>
-              <p className="mt-2 text-sm">
-                Submit an abstract (max 300 words) with a short bio. Email as a Word file to  
-                <a href="mailto:engconference.ncr@christuniversity.in" className="text-indigo-600 underline ml-1">
-                  engconference.ncr@christuniversity.in
-                </a>
-              </p>
+      <a
+        href="#important-dates"
+        className="inline-block border border-white/30 px-5 py-3 rounded-md text-white hover:bg-white/10 transition"
+      >
+        Important Dates
+      </a>
+    </div>
 
-              <ul className="mt-3 text-sm space-y-1">
-                <li>Notification of acceptance: <strong>10 January, 2026</strong></li>
-                <li>Last date to register: <strong>15 January, 2026</strong></li>
-                <li>Offline participation includes lunch, tea, and snacks.</li>
-              </ul>
+    <div className="mt-6 text-sm text-indigo-100">
+      <div>23–24 February, 2026 · Hybrid · CHRIST (Deemed to be University), Delhi NCR Campus</div>
+      <div className="mt-2">Abstract submission deadline: <strong>10 December, 2025</strong></div>
+    </div>
+  </div>
 
-              <div className="mt-4 flex gap-2">
-                <a
-  href="mailto:engconference.ncr@christuniversity.in?subject=Abstract Submission – Global Digital Cultures 2026&body=Dear Committee,%0D%0A%0D%0APlease find attached my abstract for the conference.%0D%0A%0D%0AName:%0D%0AAffiliation:%0D%0ATitle of Abstract:%0D%0A%0D%0ARegards,%0D%0A"
-  className="px-3 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700"
->
-  Submit Abstract
-</a>
+  {/* RIGHT CARD */}
+  <div className="rounded-lg overflow-hidden shadow-lg bg-white/10 p-6 glass-float">
+    <div className="bg-white rounded-md p-5 text-gray-900">
+      <h3 className="text-xl font-semibold glitch-small" data-text="Call for Abstracts">
+        Call for Abstracts
+      </h3>
 
-                <a href="#fees" className="px-3 py-2 border border-gray-200 rounded">Registration Fees</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <p className="mt-3 text-sm leading-relaxed">
+        Submit an abstract (max 300 words) with a short bio. Email as a Word file to
+        <a
+          href="mailto:engconference.ncr@christuniversity.in"
+          className="text-indigo-600 underline ml-1 hover:text-indigo-800 transition"
+        >
+          engconference.ncr@christuniversity.in
+        </a>
+      </p>
+
+      <ul className="mt-4 text-sm space-y-1">
+        <li>Notification of acceptance: <strong>10 January, 2026</strong></li>
+        <li>Last date to register: <strong>15 January, 2026</strong></li>
+        <li>Offline participation includes lunch, tea, and snacks.</li>
+      </ul>
+
+      <div className="mt-5 flex gap-2">
+        <a
+          href="mailto:engconference.ncr@christuniversity.in?subject=Abstract Submission – Global Digital Cultures 2026&body=Dear Committee,%0D%0A%0D%0APlease find attached my abstract for the conference.%0D%0A%0D%0AName:%0D%0AAffiliation:%0D%0ATitle of Abstract:%0D%0A%0D%0ARegards,%0D%0A"
+          className="px-4 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 hover:scale-105 transition"
+        >
+          Submit Abstract
+        </a>
+
+        <a
+          href="#fees"
+          className="px-4 py-2 border border-gray-200 rounded hover:bg-gray-100 transition"
+        >
+          Registration Fees
+        </a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
       {/* About */}
       <section id="about" className="max-w-6xl mx-auto px-6 py-20 scroll-mt-24">
