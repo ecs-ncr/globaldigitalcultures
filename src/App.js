@@ -453,6 +453,46 @@ export default function App() {
         </div>
       </section>
 
+{/* Conference Chairs */}
+<section id="conference-chairs" className="bg-black text-white py-24 relative overflow-hidden">
+  <div className="max-w-6xl mx-auto px-6">
+
+    <h2 className="text-4xl font-bold tracking-wide mb-16 text-center">
+      Conference Chairs
+    </h2>
+
+    <div className="grid md:grid-cols-2 gap-12">
+
+      {/* Chair 1 */}
+      <div className="group relative bg-white/5 backdrop-blur-lg p-10 rounded-xl border border-white/10 hover:border-white/30 transition">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition rounded-xl"></div>
+
+        <h3 className="text-2xl font-semibold relative z-10">Dr. Anuja Singh</h3>
+        <p className="mt-3 text-sm tracking-widest uppercase text-gray-300 relative z-10">
+          Head of Department
+        </p>
+        <p className="mt-2 text-sm text-gray-400 relative z-10">
+          Department of English and Cultural Studies
+        </p>
+      </div>
+
+      {/* Chair 2 */}
+      <div className="group relative bg-white/5 backdrop-blur-lg p-10 rounded-xl border border-white/10 hover:border-white/30 transition">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-pink-500/10 opacity-0 group-hover:opacity-100 transition rounded-xl"></div>
+
+        <h3 className="text-2xl font-semibold relative z-10">Dr. Prabha Zacharias</h3>
+        <p className="mt-3 text-sm tracking-widest uppercase text-gray-300 relative z-10">
+          Academic Coordinator
+        </p>
+        <p className="mt-2 text-sm text-gray-400 relative z-10">
+          Department of English and Cultural Studies
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 {/* Conference Conveners */}
 <section 
   id="conveners" 
