@@ -16,17 +16,21 @@ export default function App() {
   <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
 
     {/* LEFT SIDE — LOGOS + TITLE */}
-    <div className="flex items-center gap-6">
+    <div className="flex items-center gap-4 ml-0">
 
-      
-
+  
       {/* University Logo (public folder) */}
       <img 
         src="/universitylogo.png"
         alt="University Logo"
-        className="w-20 h-auto object-contain"
+        className="w-20 h-20 object-contain"
       />
-
+{/* Conference Logo */}
+  <img
+    src="/gdc-logo.png"
+    alt="GDCLogo"
+    className="w-20 h-auto object-contain mix-blend-multiply"
+  />
       {/* ECSA Logo (public folder) */}
       <img 
         src="/ecsa logo.png"
@@ -80,12 +84,7 @@ export default function App() {
   <div className="animate-fade-in">
     <div className="flex items-center gap-4">
 
-  {/* Conference Logo */}
-  <img
-    src="/conference-logo.png"
-    alt="Conference Logo"
-    className="w-20 h-auto object-contain"
-  />
+  
 
   {/* Title */}
   <h1
