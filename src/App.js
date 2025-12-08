@@ -22,21 +22,21 @@ export default function App() {
       <img 
         src={GDCLogo} 
         alt="Global Digital Cultures Logo"
-        className="w-12 h-12 object-contain"
+        className="w-20 h-auto object-contain"
       />
 
       {/* University Logo (public folder) */}
       <img 
         src="/universitylogo.png"
         alt="University Logo"
-        className="w-12 h-12 object-contain"
+        className="w-20 h-auto object-contain"
       />
 
       {/* ECSA Logo (public folder) */}
       <img 
         src="/ecsa logo.png"
         alt="ECSA Logo"
-        className="w-12 h-12 object-contain"
+        className="w-20 h-auto object-contain"
       />
 
       {/* Title text */}
