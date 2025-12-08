@@ -83,9 +83,25 @@ export default function App() {
 
   {/* LEFT TEXT */}
   <div className="animate-fade-in">
-    <h1 className="glitch text-4xl md:text-5xl font-extrabold leading-tight" data-text="Global Digital Cultures">
-      Global Digital Cultures
-    </h1>
+    <div className="flex items-center gap-4">
+
+  {/* Conference Logo */}
+  <img
+    src="/conference-logo.png"
+    alt="Conference Logo"
+    className="w-14 h-14 object-contain"
+  />
+
+  {/* Title */}
+  <h1
+    className="glitch text-4xl md:text-5xl font-extrabold leading-tight"
+    data-text="Global Digital Cultures"
+  >
+    Global Digital Cultures
+  </h1>
+
+</div>
+
 
     <p className="mt-4 text-lg text-indigo-100 max-w-xl">
       Texts, Technologies, and Audiences — an international hybrid conference exploring platform capitalism,
