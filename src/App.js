@@ -18,12 +18,7 @@ export default function App() {
     {/* LEFT SIDE — LOGOS + TITLE */}
     <div className="flex items-center gap-6">
 
-      {/* GDC Logo (inside src/assets/logos) */}
-      <img 
-        src={GDCLogo} 
-        alt="Global Digital Cultures Logo"
-        className="w-20 h-auto object-contain"
-      />
+      
 
       {/* University Logo (public folder) */}
       <img 
@@ -89,7 +84,7 @@ export default function App() {
   <img
     src="/conference-logo.png"
     alt="Conference Logo"
-    className="w-14 h-14 object-contain"
+    className="w-20 h-auto object-contain"
   />
 
   {/* Title */}
