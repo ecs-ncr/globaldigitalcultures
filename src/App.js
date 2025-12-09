@@ -559,7 +559,7 @@ export default function App() {
   <div className="max-w-5xl mx-auto px-6 text-center">
 
     <h2 className="text-3xl font-bold tracking-wide mb-10">
-      Connect With Us
+      Social Media
     </h2>
 
     <div className="flex flex-wrap justify-center gap-6">
