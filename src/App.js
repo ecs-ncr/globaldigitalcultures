@@ -56,6 +56,7 @@ export default function App() {
       <a href="#important-dates" className="hover:underline">Important Dates</a>
       <a href="#conference-chairs" className="hover:underline">Conference Chairs</a>
       <a href="#conveners" className="hover:underline">Conveners</a>
+      <a href="#social-media" className="hover:underline">Social Media</a>
       <a href="#contact" className="hover:underline">Contact</a>
     </nav>
 
@@ -550,6 +551,61 @@ export default function App() {
       </div>
 
     </div>
+  </div>
+</section>
+
+{/* Social Media */}
+<section className="bg-black py-20 text-white">
+  <div className="max-w-5xl mx-auto px-6 text-center">
+
+    <h2 className="text-3xl font-bold tracking-wide mb-10">
+      Connect With Us
+    </h2>
+
+    <div className="flex flex-wrap justify-center gap-6">
+
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/christncr_english_department"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+      >
+        Instagram
+      </a>
+
+      {/* Facebook */}
+      <a
+        href="https://m.facebook.com/profile.php?id=61575764016648&name=xhp_nt__fb__action__open_user"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+      >
+        Facebook
+      </a>
+
+      {/* LinkedIn */}
+      <a
+        href="https://www.linkedin.com/search/results/all/?keywords=department-of-english-and-cultural-studies-christ-delhi-ncr-campus"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+      >
+        LinkedIn
+      </a>
+
+      {/* YouTube */}
+      <a
+        href="https://www.youtube.com/@EnglishandCulturalStudies"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+      >
+        YouTube
+      </a>
+
+    </div>
+
   </div>
 </section>
 
