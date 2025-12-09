@@ -56,7 +56,7 @@ export default function App() {
       <a href="#important-dates" className="hover:underline">Important Dates</a>
       <a href="#conference-chairs" className="hover:underline">Conference Chairs</a>
       <a href="#conveners" className="hover:underline">Conveners</a>
-      
+
       <a href="#contact" className="hover:underline">Contact</a>
     </nav>
 
@@ -554,60 +554,76 @@ export default function App() {
   </div>
 </section>
 
-{/* Social Media */}
-<section className="bg-black py-20 text-white">
-  <div className="max-w-5xl mx-auto px-6 text-center">
+{/* SOCIAL MEDIA – Futuristic Section */}
+<section 
+  id="socials" 
+  className="relative overflow-hidden py-24 px-6"
+>
 
-    <h2 className="text-3xl font-bold tracking-wide mb-10">
-      Social Media
+  {/* Animated grid background */}
+  <div className="absolute inset-0 bg-[linear-gradient(rgba(99,102,241,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(99,102,241,0.08)_1px,transparent_1px)] bg-[size:40px_40px] animate-pulse"></div>
+
+  {/* Soft neon glow blobs */}
+  <div className="absolute -top-20 -left-20 w-72 h-72 bg-indigo-500/20 blur-3xl rounded-full"></div>
+  <div className="absolute -bottom-20 -right-20 w-72 h-72 bg-purple-500/20 blur-3xl rounded-full"></div>
+
+  <div className="relative max-w-5xl mx-auto text-center">
+
+    <h2 className="text-4xl font-extrabold tracking-widest text-white uppercase glitch" data-text="Connect With Us">
+      Connect With Us
     </h2>
 
-    <div className="flex flex-wrap justify-center gap-6">
+    <p className="mt-4 text-indigo-200 text-lg">
+      Follow the Department of English & Cultural Studies
+    </p>
+
+    <div className="mt-12 flex flex-wrap justify-center gap-6">
 
       {/* Instagram */}
-      <a
-        href="https://www.instagram.com/christncr_english_department"
+      <a 
+        href="https://instagram.com/christncr_english_department" 
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+        className="px-8 py-4 rounded-xl bg-gradient-to-r from-pink-500 to-orange-400 text-white font-semibold tracking-wider shadow-lg hover:scale-110 transition"
       >
         Instagram
       </a>
 
       {/* Facebook */}
-      <a
-        href="https://m.facebook.com/profile.php?id=61575764016648&name=xhp_nt__fb__action__open_user"
+      <a 
+        href="https://m.facebook.com/profile.php?id=61575764016648"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+        className="px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-400 text-white font-semibold tracking-wider shadow-lg hover:scale-110 transition"
       >
         Facebook
       </a>
 
       {/* LinkedIn */}
-      <a
-        href="https://www.linkedin.com/search/results/all/?keywords=department-of-english-and-cultural-studies-christ-delhi-ncr-campus"
+      <a 
+        href="https://www.linkedin.com/company/department-of-english-and-cultural-studies-christ-delhi-ncr-campus/"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+        className="px-8 py-4 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-semibold tracking-wider shadow-lg hover:scale-110 transition"
       >
         LinkedIn
       </a>
 
       {/* YouTube */}
-      <a
+      <a 
         href="https://www.youtube.com/@EnglishandCulturalStudies"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-3 rounded-full border border-white/20 backdrop-blur-md hover:bg-white hover:text-black transition-all duration-300 tracking-wide"
+        className="px-8 py-4 rounded-xl bg-gradient-to-r from-red-600 to-pink-500 text-white font-semibold tracking-wider shadow-lg hover:scale-110 transition"
       >
         YouTube
       </a>
 
     </div>
-
+    
   </div>
 </section>
+
 
             {/* Contact */}
       <footer
