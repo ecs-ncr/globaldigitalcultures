@@ -56,7 +56,7 @@ export default function App() {
       <a href="#important-dates" className="hover:underline">Important Dates</a>
       <a href="#conference-chairs" className="hover:underline">Conference Chairs</a>
       <a href="#conveners" className="hover:underline">Conveners</a>
-      <a href="#social-media" className="hover:underline">Social Media</a>
+      
       <a href="#contact" className="hover:underline">Contact</a>
     </nav>
 
