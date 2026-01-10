@@ -151,8 +151,8 @@ export default function App() {
     </p>
 
     <ul className="mt-4 text-sm space-y-1 text-gray-700">
-      <li><strong>Notification:</strong> 20 January, 2026</li>
-      <li><strong>Last Date:</strong> 25 January, 2026</li>
+      <li><strong>Notification:</strong> 10 February, 2026</li>
+      <li><strong>Last Date:</strong> 30 January, 2026</li>
       <li>Offline participation includes lunch & refreshments.</li>
     </ul>
 
@@ -442,15 +442,15 @@ export default function App() {
         <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="p-4 bg-white rounded shadow">
             <div className="font-semibold">Abstract Submission</div>
-            <div className="text-sm text-gray-700 mt-1">25 December, 2025</div>
+            <div className="text-sm text-gray-700 mt-1">30 January, 2026</div>
           </div>
           <div className="p-4 bg-white rounded shadow">
             <div className="font-semibold">Notification of Acceptance</div>
-            <div className="text-sm text-gray-700 mt-1">20 January, 2026</div>
+            <div className="text-sm text-gray-700 mt-1">10 February, 2026</div>
           </div>
           <div className="p-4 bg-white rounded shadow">
             <div className="font-semibold">Last Date to Register</div>
-            <div className="text-sm text-gray-700 mt-1">25 January, 2026</div>
+            <div className="text-sm text-gray-700 mt-1">15 February, 2026</div>
           </div>
         </div>
       </section>
