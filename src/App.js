@@ -122,7 +122,7 @@ export default function App() {
 
     <div className="mt-6 text-sm text-indigo-100">
       <div>23–24 February, 2026 · Hybrid · CHRIST (Deemed to be University), Delhi NCR Campus</div>
-      <div className="mt-2">Abstract submission deadline: <strong>25 December, 2025</strong></div>
+      <div className="mt-2">Abstract submission deadline: <strong>30 January, 2026</strong></div>
     </div>
   </div>
 
