@@ -377,12 +377,12 @@ export default function App() {
           </thead>
           <tbody className="text-gray-700 text-md">
             {[
-              ["Faculty", "2500", "3500"],
-              ["Scholars", "1500", "2000"],
-              ["PG Students", "1000", "1500"],
-              ["Independent Scholar", "1500", "2000"],
-              ["UG Students", "1000", "1000"],
-              ["Participation", "500", "1000"],
+              ["Faculty", "1000", "1500"],
+              ["Scholars", "800", "1000"],
+              ["PG Students", "1000", "800"],
+              ["Independent Scholar", "800", "1000"],
+              ["UG Students", "800", "1000"],
+              ["Participation", "500", "800"],
               ["International", "$40", "$80"],
             ].map((row) => (
               <tr key={row[0]} className="hover:bg-indigo-50 transition">
@@ -416,9 +416,9 @@ export default function App() {
           </thead>
           <tbody className="text-gray-700 text-md">
             {[
-              ["UG / PG Students", "₹ 1000"],
-              ["PhD Scholars / Independent Researchers", "₹ 1500"],
-              ["Faculty Members / Postdoc / Professionals", "₹ 2500"],
+              ["UG / PG Students", "₹ 500"],
+              ["PhD Scholars / Independent Researchers", "₹ 500"],
+              ["Faculty Members / Postdoc / Professionals", "₹ 500"],
             ].map((row) => (
               <tr key={row[0]} className="hover:bg-purple-50 transition">
                 <td className="border p-3 font-medium">{row[0]}</td>
