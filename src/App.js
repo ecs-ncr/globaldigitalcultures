@@ -1,4 +1,4 @@
-import GDCLogo from "./assets/logos/gdc-logo.png";
+
 import paromita from "./assets/speakers/paromita.png";
 import tonisha from "./assets/speakers/tonisha.png";
 import pallavi from "./assets/speakers/pallavi.png";
