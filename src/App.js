@@ -454,6 +454,16 @@ export default function App() {
           </div>
         </div>
       </section>
+      <a
+  href="/brochure.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-block bg-indigo-600 text-white px-5 py-3 rounded-md font-medium shadow 
+             hover:bg-indigo-700 hover:scale-105 transition"
+>
+  View Conference Brochure (PDF)
+</a>
+
 
 {/* Conference Chairs */}
 <section id="conference-chairs" className="bg-black text-white py-24 relative overflow-hidden">
