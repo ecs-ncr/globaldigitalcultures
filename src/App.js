@@ -33,7 +33,7 @@ export default function App() {
   />
       {/* ECSA Logo (public folder) */}
       <img 
-        src="/ecsa logo.png"
+        src="/ecsa-logo.png"
         alt="ECSA Logo"
         className="w-20 h-auto object-contain"
       />
@@ -379,7 +379,7 @@ export default function App() {
             {[
               ["Faculty", "1000", "1500"],
               ["Scholars", "800", "1000"],
-              ["PG Students", "1000", "800"],
+              ["PG Students", "800", "1000"],
               ["Independent Scholar", "800", "1000"],
               ["UG Students", "800", "1000"],
               ["Participation", "500", "800"],
